@@ -1,0 +1,100 @@
+:root {
+    --main-color: #20272b;
+    --text-color: #f3f4f4;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI.woff") format("woff"),
+        url("../fonts/SegoeUI.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SegoeUI-SemiBold.woff") format("woff"), url("../fonts/SegoeUI-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SegoeUI-Bold.woff") format("woff"), url("../fonts/SegoeUI-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.v-application {
+    &--wrap {
+        background-color: var(--main-color);
+        color: var(--text-color);
+        font-size: 16px;
+        font-family: "Segoe UI", sans-serif;
+        padding-top: 150px;
+    }
+    a {
+        color: unset !important;
+    }
+    a,
+    button,
+    svg {
+        transition: 0.3s;
+    }
+}
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > th,
+.v-data-table > .v-data-table__wrapper > table > thead > tr > th,
+.v-data-table > .v-data-table__wrapper > table > tfoot > tr > th,
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+.v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
+    font-size: 24px !important;
+}
+.v-input__control {
+    position: relative;
+}
+.v-input__slot {
+    margin-bottom: 0;
+}
+.v-text-field__details {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+}
+.v-text-field--filled:not(.v-text-field--single-line) input {
+    margin-top: 0;
+}
+
+@media (min-width: 1904px) {
+    .container {
+        max-width: 2300px;
+    }
+}
+@media screen and (max-width: 1900px) {
+    .v-application {
+        .header {
+            .v-text-field--outlined > .v-input__control > .v-input__slot {
+                min-height: 40px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .v-application {
+        &--wrap {
+            padding-top: 75px;
+        }
+    }
+}
