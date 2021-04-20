@@ -101,7 +101,7 @@
 			max-width: 390px;
 			height: 55px;
 			input {
-				font-size: 48px !important;
+				font-size: 3rem !important;
 			}
 		}
 		&_commission {
@@ -114,7 +114,7 @@
 				height: 100% !important;
 				max-width: 80px;
 				text-align: center !important;
-				font-size: 48px;
+				font-size: 3rem;
 			}
 		}
 	}
@@ -126,7 +126,7 @@
 			display: block;
 			margin-right: 44px;
 			border-bottom: 4px solid transparent;
-			font-size: 26px;
+			font-size: 1.6rem;
 			font-weight: 600;
 			&.router-link-exact-active {
 				border-bottom: 4px solid currentColor;
@@ -139,7 +139,7 @@
 	@media screen and (max-width: 1900px) {
 		.nav {
 			a {
-				font-size: 18px;
+				font-size: 1.1rem;
 				margin-right: 20px;
 				padding: 40px 10px 24px;
 			}
@@ -160,14 +160,10 @@
 				}
 			}
 		}
-		.v-text-field input {
-			font-size: 16px;
-		}
 	}
 	@media screen and (max-width: 1400px) {
 		.nav {
 			a {
-				font-size: 16px;
 				margin-right: 10px;
 				padding: 20px 10px 14px;
 			}
