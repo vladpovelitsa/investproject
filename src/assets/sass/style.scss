@@ -68,7 +68,7 @@ html {
 .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
 .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
 .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
 }
 .v-input__control {
     position: relative;
@@ -83,6 +83,88 @@ html {
 }
 .v-text-field--filled:not(.v-text-field--single-line) input {
     margin-top: 0;
+}
+.w-100 {
+    width: 100%;
+}
+
+#start {
+    .v-tabs-slider-wrapper {
+        height: 5px !important;
+    }
+    .centered-input.v-text-field {
+        padding: 0;
+        margin: 0;
+        border: 1px solid #fff;
+
+        .v-input__slot {
+            height: 56px;
+            padding: 0 10px;
+            input {
+                text-align: center;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .centered-input.v-text-field .v-label {
+        left: 50% !important;
+        transform: translateX(-50%);
+        transform-origin: 0 50%;
+        padding: 0 5px 0;
+        font-size: 1.1rem;
+        height: auto;
+        max-height: unset;
+        line-height: 1;
+
+        &.v-label--active {
+            background: var(--main-color);
+            transform: translateY(-24px) scale(0.75) translateX(-50%);
+        }
+    }
+
+    .v-input--selection-controls__input {
+        .v-icon.v-icon {
+            font-size: 1.5rem;
+        }
+        & + .v-label {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+    }
+
+    .theme--dark.v-text-field.centered-input > .v-input__control > .v-input__slot:before {
+        display: none;
+    }
+    .theme--dark.v-text-field.centered-input > .v-input__control > .v-input__slot:after {
+        display: none;
+    }
+    .v-file-input {
+        .v-label {
+            font-weight: 700;
+            color: #f3f4f4;
+        }
+    }
+}
+
+.theme--dark.v-data-table {
+    background-color: transparent !important;
+    table {
+        border-collapse: collapse !important;
+    }
+    td,
+    th {
+        border: 1px solid #8c8f92 !important;
+        padding: 5px 15px !important;
+    }
+}
+
+.dividents_form {
+    .v-text-field {
+        max-width: 100px;
+        input {
+            text-align: center;
+        }
+    }
 }
 
 @media (min-width: 1904px) {

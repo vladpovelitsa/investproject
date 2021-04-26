@@ -10,17 +10,17 @@
 							</router-link>
 						</li>
 						<li>
-							<router-link class="text-decoration-none" :to="{ name: 'login' }">
+							<router-link class="text-decoration-none" :to="{ name: 'start' }">
 								Начать движуху
 							</router-link>
 						</li>
 						<li>
-							<router-link class="text-decoration-none" :to="{ name: 'home' }">
+							<router-link class="text-decoration-none" :to="{ name: 'statistics' }">
 								Настройки
 							</router-link>
 						</li>
 						<li>
-							<router-link class="text-decoration-none" :to="{ name: 'home' }">
+							<router-link class="text-decoration-none" :to="{ name: 'statistics' }">
 								Профиль
 							</router-link>
 						</li>
@@ -128,7 +128,7 @@
 			border-bottom: 4px solid transparent;
 			font-size: 1.6rem;
 			font-weight: 600;
-			&.router-link-exact-active {
+			&.router-link-active {
 				border-bottom: 4px solid currentColor;
 			}
 			&:hover {
