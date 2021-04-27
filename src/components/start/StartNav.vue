@@ -2,7 +2,7 @@
 	<ul id="startNav" class="d-flex justify-center">
 		<li>
 			<router-link
-				class="text-decoration-none link px-6 py-2 mx-3"
+				class="text-decoration-none link px-3 px-xl-6 py-2 mx-3"
 				:to="{ name: 'start' }"
 			>
 				1. Завершение <br />
@@ -11,7 +11,7 @@
 		</li>
 		<li>
 			<router-link
-				class="text-decoration-none link px-6 py-2 mx-3"
+				class="text-decoration-none link px-3 px-xl-6 py-2 mx-3"
 				:to="{ name: 'dividends-cycle' }"
 			>
 				2. Расчет <br />
@@ -20,7 +20,7 @@
 		</li>
 		<li>
 			<router-link
-				class="text-decoration-none link px-6 py-2 mx-3"
+				class="text-decoration-none link px-3 px-xl-6 py-2 mx-3"
 				:to="{ name: 'dividends-user' }"
 			>
 				3. Расчет <br />
@@ -29,7 +29,7 @@
 		</li>
 		<li>
 			<router-link
-				class="text-decoration-none link px-6 py-2 mx-3"
+				class="text-decoration-none link px-3 px-xl-6 py-2 mx-3"
 				:to="{ name: 'new-cycle' }"
 			>
 				4. Старт Нового <br />
@@ -38,7 +38,7 @@
 		</li>
 		<li>
 			<router-link
-				class="text-decoration-none link px-6 py-2 mx-3"
+				class="text-decoration-none link px-3 px-xl-6 py-2 mx-3"
 				:to="{ name: 'approve' }"
 			>
 				5. Утверждение</router-link
@@ -46,11 +46,13 @@
 		</li>
 		<li>
 			<router-link
-				class="text-decoration-none link px-4 py-2 mx-3 d-flex align-center justify-center"
+				class="text-decoration-none link px-3 py-2 mx-3 d-flex align-center justify-center"
 				:to="{ name: 'done' }"
 			>
 				<v-icon
-					size="60px"
+					size-xl="60px"
+					size-lg="40px"
+					size="30px"
 					:color="this.$route.path == '/done' ? '#555d6a' : '#8a8d8f'"
 					class="font-weigth-bold"
 					>mdi-check</v-icon
@@ -109,6 +111,13 @@
 			color: #555d6a !important;
 			background: #f3f4f4;
 			border-color: #f3f4f4;
+		}
+		@media screen and (max-width: 1500px) {
+			border-width: 3px;
+			&:before {
+				left: calc(100% + 3px);
+				height: 3px;
+			}
 		}
 	}
 </style>

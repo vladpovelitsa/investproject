@@ -39,10 +39,10 @@
 html {
     font-size: 20px;
     @media screen and (max-width: 2000px) {
-        font-size: 16px;
+        font-size: 12px;
     }
     @media screen and (max-width: 1400px) {
-        font-size: 12px;
+        font-size: 9px;
     }
 }
 .v-application {
@@ -187,5 +187,8 @@ html {
         &--wrap {
             padding-top: 75px;
         }
+    }
+    #start .centered-input.v-text-field .v-label {
+        font-size: 1.5rem;
     }
 }

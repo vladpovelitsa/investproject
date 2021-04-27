@@ -99,7 +99,7 @@
 		background-color: var(--main-color);
 		&_search {
 			max-width: 390px;
-			height: 55px;
+			height: 49px;
 			input {
 				font-size: 3rem !important;
 			}
@@ -108,7 +108,7 @@
 			height: 50px;
 			&__btn {
 				width: 50px;
-				height: 55px !important;
+				height: 49px !important;
 			}
 			&__input {
 				height: 100% !important;
