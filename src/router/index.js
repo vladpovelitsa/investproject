@@ -57,6 +57,11 @@ const routes = [
  },
  // start
  {
+  path: '/profile',
+  name: 'profile',
+  component: () => import('../components/Profile.vue'),
+ },
+ {
   path: '/settings',
   name: 'settings',
   component: () => import('../components/Settings.vue'),
@@ -77,10 +82,16 @@ const routes = [
   component: () => import('../components/AddUser.vue'),
  },
  {
-  path: '/profile',
-  name: 'profile',
-  component: () => import('../components/Profile.vue'),
+  path: '/add-payment',
+  name: 'add-payment',
+  component: () => import('../components/AddPayment.vue'),
  },
+ {
+  path: '/add-comission',
+  name: 'add-comission',
+  component: () => import('../components/AddComission.vue'),
+ },
+
  {
   path: '/users',
   name: 'users',

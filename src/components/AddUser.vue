@@ -9,7 +9,7 @@
           color="var(--text-color)"
           type="submit"
           @click="save"
-          >Добавить
+          >Сохранить
         </v-btn>
       </div>
       <div
@@ -37,11 +37,11 @@
           required
           v-model="position"
         ></v-text-field>
-        <div class="d-flex align-center w-100">
+        <div class="d-flex align-center w-100 justify-start">
           <h3 class="text-h4 mx-3">$</h3>
           <v-text-field
-            label="Сумма"
-            class="create_form__input rounded-0 w-100"
+            label="Зарплата"
+            class="create_form__input rounded-0"
             color="var(--text-color)"
             dark
             outlined
@@ -51,8 +51,8 @@
           ></v-text-field>
           <h3 class="text-h4 mx-3">%</h3>
           <v-text-field
-            label="Комиссия"
-            class="create_form__input rounded-0 w-100"
+            label="От дохода"
+            class="create_form__input rounded-0"
             color="var(--text-color)"
             dark
             outlined
@@ -61,6 +61,26 @@
             required
           ></v-text-field>
         </div>
+        <v-radio-group v-model="radioGroup" dark row class="w-100">
+          <v-radio
+            label="Администратор"
+            value="Администратор"
+            color="white"
+            class="col-4 mr-0"
+          ></v-radio>
+          <v-radio
+            label="Оператор"
+            value="Оператор"
+            color="white"
+            class="col-4 mr-0"
+          ></v-radio>
+          <v-radio
+            label="Пользователь"
+            value="Пользователь"
+            color="white"
+            class="col-4 mr-0"
+          ></v-radio>
+        </v-radio-group>
       </div>
     </v-form>
   </div>
